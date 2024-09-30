@@ -1,0 +1,61 @@
+/* src/components/MoviesList.css */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+    color: #0a1b39;
+}
+
+    .movie-card img {
+        width: 100%;
+        height: auto; /*aspect ratio */
+    }
+
+    .movie-card h2 {
+        margin: 10px 0; /*margin for spacing */
+        font-size: 1.2em; /*font size */
+        color: #0b1c3b; /*text color */
+    }
+
+    .movie-card p {
+        margin: 5px 0; /* Add some margin for spacing */
+    }
+
+/* Search input styles */
+.search-container {
+    margin-bottom: 20px; /* space below the search bar */
+    margin-left: 50px;
+}
+
+    .search-container input {
+        flex: 1; /* fill available space */
+        padding: 10px; 
+        font-size: 16px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        margin-right: 10px; /* space between input and button */
+    }
+
+    .search-container button {
+        padding: 10px 15px;
+        background-color: #4CAF50; /* green */
+        color: white;
+        border-radius: 4px; /* rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        font-size: 16px; /* Increase font size for readability */
+    }
+
+        .search-container button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
